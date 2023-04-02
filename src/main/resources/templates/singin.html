@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+				xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head>
+    <title>registrarse</title>
+    <link th:href="@{/css/style2.css}" rel="stylesheet">
+    <link th:href="@{/css/bootstrap.min.css}" rel="stylesheet">
+</head>
+<body>
+
+<div th:if="${param.error}" class="alert alert-danger">
+				Usuario o Contrase&#241;a inv&#225;lidos
+			</div>
+<!--  
+<div class="alert alert-danger alert-dismissible fade show" role="alert" th:if="${error != null}">
+  <span th:text="${error}"></span>
+  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+-->
+
+<div class="div-formulario d-flex flex-column align-items-center justify-content-center">
+
+	<div class="form-sign">
+    <form th:action="@{/signin}" method="post" class="form-signin d-flex flex-column align-items-center">
+    <label for="Nombres"> Nombres</label>
+    <input type="text" class="form-control" name="Nombres" id="Nombres" placeholder="Nombres" required>
+   
+      <label for="Apellidos"> Apellidos</label>
+    <input type="text" class="form-control" name="Apellidos" id="Apellidos" placeholder="Apellidos" required>
+    
+    <label for="Celular"> Celular</label>
+       <input type="number" class="form-control" name="Celular" id="Celular" placeholder="Número de celular" required >
+       
+       <label for="Correo"> Correo</label>
+       <input type="email" class="form-control" name="Correo" id="Correo" placeholder="Correo electrónico" required >
+       
+       <label for="Contraseña"> Contraseña</label>
+       <input type="password"  class="form-control mt-3" name="Contraseña" id="Contraseña"  placeholder="Contraseña" required>
+       <div class="checkbox mb-3">
+       </div>
+       <button class="btn btn-lg btn-primary btn-block w-100" type="submit" name="btn-registrarse">Registrarse</button>
+              
+     </form>
+	</div>
+</div>
+
+	
+	
+	
+</body>
+</html>

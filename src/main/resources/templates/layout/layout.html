@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head th:fragment="head">
+<meta charset="UTF-8">
+<!--Responsive-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Avinka</title>
+<!--CSS Bootstrap-->
+<link th:href="@{/css/bootstrap.min.css}" rel="stylesheet">
+<link th:href="@{/css/fontawesome.min.css}" rel="stylesheet">
+<link th:href="@{/css/solid.min.css}" rel="stylesheet">
+<link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+<!--Application CSS-->
+<link rel="stylesheet" type="text/css" href="/css/style.css">
+<link rel="stylesheet"
+	href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+	integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+	crossorigin="anonymous">
+
+</head>
+
+
+<body>
+	<header th:fragment="header">
+
+		<div>
+
+			<nav class="navbar navbar-expand-lg navbar-light"
+				style="background-color: #33cc33">
+
+
+
+
+				<img class="d-inline-block align-middle" src="/images/logo.png"
+					alt="Logo" width="130px">
+
+
+				<div class="buscador">
+
+					<input type="search" placeholder="¿Qué producto estás buscando?"
+						size="130" spellcheck="false" class="form-control"
+						aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+
+				</div>
+
+			</nav>
+
+		</div>
+		<div>
+
+			<nav class="navbar navbar-expand-lg navbar-light bg-light">
+				
+				
+				<div class="collapse navbar-collapse" id="navbarNavDropdown">
+					<ul class="navbar-nav">
+					<li class="nav-item dropdown"><a
+							class="nav-link dropdown-toggle" href="#"
+							id="navbarDropdownMenuLink" data-toggle="dropdown"
+							aria-haspopup="true" aria-expanded="false"> Todas las categorias </a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+								<a class="dropdown-item" href="#">OFERTAS</a> <a
+									class="dropdown-item" href="#">Preparados</a> 
+								<a class="dropdown-item" href="#">Huevos</a>
+							</div></li>
+						<li class="nav-item active"><a class="nav-link" href="#">Home
+								<span class="sr-only">(current)</span>
+						</a></li>
+						<li class="nav-item"><a class="nav-link" href="#">Features</a>
+						</li>
+						<li class="nav-item"><a class="nav-link" href="#">Pricing</a>
+						</li>
+						
+					</ul>
+				</div>
+			</nav>
+
+
+
+		</div>
+
+	</header>
+
+
+
+
+
+	<footer th:fragment="footer" class="container-fluid"
+		style="background-color: #2d333c">
+
+		<div class="row">
+			<div class="col-4 p-2">
+
+
+				<p class="fw-bold text-white fw-bold text-center">Contacto</p>
+				<p class="contacto">
+					GRUPO SANTA ELENA S.A. <br> Oficina Principal: Av. Manuel
+					Olguin <br> Nro. 325 Int. 703 - Santiago de Surco - Lima, Perú
+					<br> atencioncliente@santaelena.com.pe
+				</p>
+
+
+
+			</div>
+
+			<div class="col-4 p-3">
+				<p class="fw-bold text-white fw-bold text-center">Acerca de
+					Avinka</p>
+				<p>
+					Terminos y condiciones <br> Política de privacidad <br>
+					Términos y condiciones Promociones <br> Tiendas Avinka
+				</p>
+
+
+			</div>
+
+			<div class="col-4 p-3">
+				<p class="fw-bold text-white fw-bold text-center">Medios de pago
+
+
+				
+			</div>
+		</div>
+
+		<script th:src="@{/js/bootstrap.bundle.min.js}"></script>
+		<script th:src="@{/js/bootstrap.bundle.min.js}"></script>
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+			integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+			crossorigin="anonymous" type="text/javascript"></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+			integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+			crossorigin="anonymous"></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+			integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+			crossorigin="anonymous" type="text/javascript"></script>
+
+
+
+	</footer>
+
+	
+
+</body>
+
+
+
+</html>
